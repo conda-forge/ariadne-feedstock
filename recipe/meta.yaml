@@ -1,5 +1,5 @@
 {% set name = "ariadne" %}
-{% set version = "0.15.1" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ariadne-{{ version }}.tar.gz
-  sha256: 678851826887ecf27a791135fb9ea9a67305243ebb03f9814fbc50fb7e8251f4
+  sha256: 2429ca81ff4c4621084c82a3aa2c300a89cdd92194526103656b3f1b534cffd1
 
 build:
   noarch: python
