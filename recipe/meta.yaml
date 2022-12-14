@@ -1,5 +1,5 @@
 {% set name = "ariadne" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ariadne-{{ version }}.tar.gz
-  sha256: 77ab1f77ca8c091f8c095c9bafc9ee589243ea50b2f94ab6bea9985fced5d3d0
+  sha256: afc5fd2706380ef114f1020dce74e0a42d27b28c8a8565c28191aaaa1808ea21
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - graphql-core >=3.2.0,<3.3
     - python >=3.7
-    - starlette >0.17,<0.20
+    - starlette >0.17,<1.0
     - typing-extensions >=3.6.0
 
 test:
