@@ -1,11 +1,11 @@
-About ariadne
-=============
+About ariadne-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ariadne-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ariadnegraphql.org/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ariadne-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ariadne is a Python library for implementing GraphQL servers.
 
