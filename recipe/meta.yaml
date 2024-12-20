@@ -1,13 +1,13 @@
 {% set name = "ariadne" %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ariadne-{{ version }}.tar.gz
-  sha256: 84c46ae27fad98e1a6553c8930e6fc8e755f8dcd54a959d33caf04ecfe026a93
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ariadne-{{ version }}.tar.gz
+  sha256: 6ea3f53d7e54d83b011e5697795ab7f8a713cb5f9423d6849e43a84f2fe81293
 
 build:
   noarch: python
@@ -18,12 +18,12 @@ requirements:
   host:
     - hatchling
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
+    - python >={{ python_min }}
     - graphql-core >=3.2.0,<3.3
-    - python >=3.7
     - starlette >0.17,<1.0
-    - typing-extensions >=3.6.0
+    - typing_extensions >=3.6.0
 
 test:
   imports:
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://ariadnegraphql.org/
