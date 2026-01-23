@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ariadne
-  version: 0.26.2
+  version: "0.27.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ariadne-${{ version }}.tar.gz
-  sha256: 607617f82760c039b2137b7c1200b475ea90ccf4ca42c0994926c0d8fdede908
+  sha256: 33788aaa4d518049f582d7a0e594cadc2768f27ae0045e01821199124e646653
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - python ${{ python_min }}.*
   run:
     - python >=${{ python_min }}
-    - graphql-core >=3.2.0,<3.2.6
+    - graphql-core >=3.2.0
     - starlette >0.17,<1.0
     - typing_extensions >=3.6.0
 
