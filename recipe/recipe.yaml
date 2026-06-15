@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ariadne
-  version: "1.0.1"
+  version: "1.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ariadne-${{ version }}.tar.gz
-  sha256: 502fc2869cdd67822c69b846bece9f811e70868feb9a191186a4a802bf56b06d
+  sha256: 847b5b399e56e4781f851b4ee3f3fd443d6c379e64a4828a792e8264b597c9e4
 
 build:
   number: 0
